@@ -10,17 +10,17 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 12> locations_array__ = 
 {" (found before start of program)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 7, column 2 to column 40)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 8, column 2 to column 30)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 9, column 2 to column 42)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 11, column 2 to column 16)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 13, column 4 to column 50)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 12, column 17 to line 14, column 3)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 12, column 2 to line 14, column 3)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 2, column 2 to column 8)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 3, column 10 to column 11)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 3, column 2 to column 13)",
- " (in 'C:/Users/Wiola/Desktop/Data_Analytics_Project/Projekt_Analiza_Danych/model1_prio.stan', line 11, column 13 to column 14)"};
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 7, column 2 to column 42)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 8, column 2 to column 35)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 9, column 2 to column 42)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 11, column 2 to column 16)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 13, column 4 to column 50)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 12, column 17 to line 14, column 3)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 12, column 2 to line 14, column 3)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 2, column 2 to column 8)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 3, column 10 to column 11)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 3, column 2 to column 13)",
+ " (in 'C:/Users/Wiola/fox_pred/model1_prio.stan', line 11, column 13 to column 14)"};
 
 
 
@@ -145,10 +145,10 @@ class model1_prio_model final : public model_base_crtp<model1_prio_model> {
       } 
       double alpha = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      alpha = stan::math::normal_rng(8, 5, base_rng__);
+      alpha = stan::math::normal_rng(6, 1.5, base_rng__);
       double beta = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
-      beta = stan::math::normal_rng(0, 5, base_rng__);
+      beta = stan::math::normal_rng(-0.3, 0.2, base_rng__);
       double sigma = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
       sigma = stan::math::normal_rng(0, 3, base_rng__);
